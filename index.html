@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tattoo Test</title>
+    
+  </head>
+
+  <body>
+
+  <header class="header">
+  <div class="header_container">
+
+    <a href="index.html" class="header_logo" data-i18n="header_logo">
+      INK STUDIO
+    </a>
+
+    <button class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="header_nav">
+
+      <ul class="header_menu">
+        <li class="header_menu_item">
+          <a href="#services" class="header_menu_link" data-i18n="nav_services">Services</a>
+        </li>
+        <li class="header_menu_item">
+          <a href="#gallery" class="header_menu_link" data-i18n="nav_gallery">Gallery</a>
+        </li>
+        <li class="header_menu_item">
+          <a href="#about" class="header_menu_link" data-i18n="nav_about">About</a>
+        </li>
+        <li class="header_menu_item">
+          <a href="#contact" class="header_menu_link" data-i18n="nav_contact">Contact</a>
+        </li>
+      </ul>
+
+      <div class="header_actions">
+        <div class="lang-switch">
+          <input type="checkbox" id="lang-toggle" class="lang-switch__checkbox">
+          <label for="lang-toggle" class="lang-switch__label">
+            <span class="lang-switch__option lang-switch__option--en">EN</span>
+            <span class="lang-switch__option lang-switch__option--de">DE</span>
+            <span class="lang-switch__inner"></span>
+          </label>
+        </div>
+
+        <button class="header_btn" data-i18n="nav_book">Book Now</button>
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+<nav class="mobile_menu">
+  <ul class="mobile_menu_list">
+    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+    <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+    <li><a href="#about" data-i18n="nav_about">About</a></li>
+    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+
+  <div class="mobile_lang">
+    <div class="lang-switch">
+      <input type="checkbox" id="lang-toggle-mobile" class="lang-switch__checkbox">
+      <label for="lang-toggle-mobile" class="lang-switch__label">
+        <span class="lang-switch__option lang-switch__option--en">EN</span>
+        <span class="lang-switch__option lang-switch__option--de">DE</span>
+        <span class="lang-switch__inner"></span>
+      </label>
+    </div>
+  </div>
+
+  <button class="mobile_btn" data-i18n="nav_book">Book Now</button>
+</nav>
+
+
+<main>
+  <section class="hero" id="hero">
+  <div class="hero_wrapper">
+    <div class="hero_wrapper_title">
+      <h1 data-i18n="hero_title">Art on Skin</h1>
+
+      <p data-i18n="hero_subtitle">
+        Professional tattoos from experienced artists
+      </p>
+
+      <div class="hero_btn_box">
+        <a href="#contact" class="hero_booking_btn" data-i18n="hero_btn_book">
+          Book a Session
+        </a>
+
+        <a href="#gallery" class="hero_viewing_btn" data-i18n="hero_btn_view">
+          View Our Work
+        </a>
+      </div>
+    </div>
+
+    <a href="#services" class="border_btn">
+      <img src="./src/assets/icons/anchor.webp" loading="lazy" alt="scroll_down_anchor">
+    </a>
+  </div>
+</section>
+  
+<section class="services" id="services">
+  <div class="services_wrapper">
+
+    <h2 class="services__title" data-i18n="services_title">
+      Our Services
+    </h2>
+
+    <p class="services__subtitle" data-i18n="services_subtitle">
+      Wide range of services to bring your ideas to life
+    </p>
+
+    <div class="services_box">
+
+      <div class="services_box_card">
+        <h3 class="services_card_title" data-i18n="services_item1_title">
+          Traditional Tattoos
+        </h3>
+        <p class="services_card_text" data-i18n="services_item1_text">
+          Classic and traditional tattoo styles
+        </p>
+        <p class="services_card_price" data-i18n="services_item1_price">
+          from €80
+        </p>
+      </div>
+
+      <div class="services_box_card">
+        <h3 class="services_card_title" data-i18n="services_item2_title">
+          Realism
+        </h3>
+        <p class="services_card_text" data-i18n="services_item2_text">
+          Realistic portraits and images
+        </p>
+        <p class="services_card_price" data-i18n="services_item2_price">
+          from €120
+        </p>
+      </div>
+
+      <div class="services_box_card">
+        <h3 class="services_card_title" data-i18n="services_item3_title">
+          Graphics
+        </h3>
+        <p class="services_card_text" data-i18n="services_item3_text">
+          Graphic and geometric designs
+        </p>
+        <p class="services_card_price" data-i18n="services_item3_price">
+          from €60
+        </p>
+      </div>
+
+      <div class="services_box_card">
+        <h3 class="services_card_title" data-i18n="services_item4_title">
+          Color Tattoos
+        </h3>
+        <p class="services_card_text" data-i18n="services_item4_text">
+          Vibrant color tattoos of any complexity
+        </p>
+        <p class="services_card_price" data-i18n="services_item4_price">
+          from €100
+        </p>
+      </div>
+
+      <div class="services_box_card">
+        <h3 class="services_card_title" data-i18n="services_item5_title">
+          Cover-ups
+        </h3>
+        <p class="services_card_text" data-i18n="services_item5_text">
+          Cover-up of old tattoos
+        </p>
+        <p class="services_card_price" data-i18n="services_item5_price">
+          from €90
+        </p>
+      </div>
+
+      <div class="services_box_card">
+        <h3 class="services_card_title" data-i18n="services_item6_title">
+          Custom Designs
+        </h3>
+        <p class="services_card_text" data-i18n="services_item6_text">
+          Individual design development
+        </p>
+        <p class="services_card_price" data-i18n="services_item6_price">
+          from €40
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+<section class="gallery" id="gallery">
+  <div class="gallery_wrapper">
+
+    <h2 data-i18n="gallery_title">Gallery</h2>
+
+    <p data-i18n="gallery_subtitle">
+      Our best work and happy clients
+    </p>
+
+    <!-- FILTER BUTTONS -->
+    <div class="gallery_filters">
+      <button class="gallery_filter_btn active" data-filter="all" data-i18n="gallery_filter_all">All</button>
+      <button class="gallery_filter_btn" data-filter="realism" data-i18n="gallery_filter_realism">Realism</button>
+      <button class="gallery_filter_btn" data-filter="bw" data-i18n="gallery_filter_bw">Black & White</button>
+      <button class="gallery_filter_btn" data-filter="sketch" data-i18n="gallery_filter_sketch">Sketch</button>
+      <button class="gallery_filter_btn" data-filter="minimalism" data-i18n="gallery_filter_minimalism">Minimalism</button>
+    </div>
+
+    <div class="gallery_wrapper_img_box">
+      <img src="./src/assets/images/tattoo1_realism.webp" loading="lazy" alt="gallery_tattoo1_realism">
+      <img src="./src/assets/images/tattoo2_b&w.webp" loading="lazy" data-category="bw" alt="gallery_tattoo2_b&w">
+      <img src="./src/assets/images/tattoo3_realism_in_process.webp" loading="lazy" data-category="realism" alt="gallery_tattoo3_realism_in_process">
+      <img src="./src/assets/images/tattoo4_b&w_in_process.webp" loading="lazy" data-category="bw" alt="gallery_tattoo4_b&w_in_process">
+      <img src="./src/assets/images/tattoo5_sketch.webp" loading="lazy" data-category="sketch" alt="gallery_tattoo5_sketch">
+      <img src="./src/assets/images/tattoo6_minimalism_in_process.webp" loading="lazy" data-category="minimalism" alt="gallery_tattoo6_minimalism_in_process">
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about_wrapper">
+
+    <div class="about_wrapper_content">
+
+      <h2 class="about__title" data-i18n="about_title">
+        About Our Studio
+      </h2>
+
+      <p class="about__text" data-i18n="about_text1">
+        INK STUDIO is a team of professional tattoo artists with many years of experience. 
+        We specialize in various tattoo styles and guarantee safety, sterility and high quality work.
+      </p>
+
+      <p class="about__text" data-i18n="about_text2">
+        Our studio is equipped with modern equipment, we use only quality pigments and disposable consumables. 
+        Each artist has a portfolio and is ready to bring your idea to life or create a unique design.
+      </p>
+
+      <div class="about_stats">
+
+        <div class="stats_block">
+          <h5 class="stats_block_value" data-i18n="about_stat1_value">10+</h5>
+          <p class="stats_block_label" data-i18n="about_stat1_label">years experience</p>
+        </div>
+
+        <div class="stats_block">
+          <h5 class="stats_block_value" data-i18n="about_stat2_value">5</h5>
+          <p class="stats_block_label" data-i18n="about_stat2_label">artists</p>
+        </div>
+
+        <div class="stats_block">
+          <h5 class="stats_block_value" data-i18n="about_stat3_value">2000+</h5>
+          <p class="stats_block_label" data-i18n="about_stat3_label">clients</p>
+        </div>
+
+        <div class="stats_block">
+          <h5 class="stats_block_value" data-i18n="about_stat4_value">100%</h5>
+          <p class="stats_block_label" data-i18n="about_stat4_label">sterile</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="about_wrapper_img">
+      <img src="./src/assets/images/about_tattoo_artist_working.webp" loading="lazy" alt="tattoo_artist_working">
+    </div>
+
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="process_wrapper">
+
+    <h2 class="process__title" data-i18n="process_title">
+      Our Process
+    </h2>
+
+    <p class="process__subtitle" data-i18n="process_subtitle">
+      How we work with you
+    </p>
+
+    <div class="process_steps">
+
+      <div class="process_steps_box">
+        <h3 class="process_step_number">1</h3>
+        <h4 class="process_step_title" data-i18n="process_step1_title">
+          Consultation
+        </h4>
+        <p class="process_step_text" data-i18n="process_step1_text">
+          We discuss your idea, style preferences, and placement
+        </p>
+      </div>
+
+      <div class="process_steps_box">
+        <h3 class="process_step_number">2</h3>
+        <h4 class="process_step_title" data-i18n="process_step2_title">
+          Design
+        </h4>
+        <p class="process_step_text" data-i18n="process_step2_text">
+          Our artist creates a custom design based on your vision
+        </p>
+      </div>
+
+      <div class="process_steps_box">
+        <h3 class="process_step_number">3</h3>
+        <h4 class="process_step_title" data-i18n="process_step3_title">
+          Approval
+        </h4>
+        <p class="process_step_text" data-i18n="process_step3_text">
+          Review and approve the final design before the session
+        </p>
+      </div>
+
+      <div class="process_steps_box">
+        <h3 class="process_step_number">4</h3>
+        <h4 class="process_step_title" data-i18n="process_step4_title">
+          Tattooing
+        </h4>
+        <p class="process_step_text" data-i18n="process_step4_text">
+          Professional execution in a sterile environment
+        </p>
+      </div>
+
+      <div class="process_steps_box">
+        <h3 class="process_step_number">5</h3>
+        <h4 class="process_step_title" data-i18n="process_step5_title">
+          Aftercare
+        </h4>
+        <p class="process_step_text" data-i18n="process_step5_text">
+          Detailed instructions for proper healing and care
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="artists" id="artists">
+  <div class="artists_wrapper">
+
+    <h2 class="artists__title" data-i18n="artists_title">
+      Our Artists
+    </h2>
+
+    <p class="artists__subtitle" data-i18n="artists_subtitle">
+      Meet our talented team
+    </p>
+
+    <div class="artist_wrapper_cardbox">
+
+      <div class="artist_card">
+        <h3 class="artist_card_letter">A</h3>
+        <div class="artist_card_info">
+          <h4 class="artist_card_name" data-i18n="artist1_name">Alex Schmidt</h4>
+          <p class="artist_card_style" data-i18n="artist1_style">Realism & Portraits</p>
+          <p class="artist_card_experience" data-i18n="artist1_experience">12 years</p>
+        </div>
+      </div>
+
+      <div class="artist_card">
+        <h3 class="artist_card_letter">M</h3>
+        <div class="artist_card_info">
+          <h4 class="artist_card_name" data-i18n="artist2_name">Maria Weber</h4>
+          <p class="artist_card_style" data-i18n="artist2_style">Traditional & Neo-Traditional</p>
+          <p class="artist_card_experience" data-i18n="artist2_experience">8 years</p>
+        </div>
+      </div>
+
+      <div class="artist_card">
+        <h3 class="artist_card_letter">T</h3>
+        <div class="artist_card_info">
+          <h4 class="artist_card_name" data-i18n="artist3_name">Tom Fischer</h4>
+          <p class="artist_card_style" data-i18n="artist3_style">Blackwork & Graphics</p>
+          <p class="artist_card_experience" data-i18n="artist3_experience">10 years</p>
+        </div>
+      </div>
+
+      <div class="artist_card">
+        <h3 class="artist_card_letter">S</h3>
+        <div class="artist_card_info">
+          <h4 class="artist_card_name" data-i18n="artist4_name">Sarah Klein</h4>
+          <p class="artist_card_style" data-i18n="artist4_style">Color & Watercolor</p>
+          <p class="artist_card_experience" data-i18n="artist4_experience">7 years</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section class="reviews" id="reviews">
+  <div class="reviews_wrapper">
+
+    <h2 class="reviews__title" data-i18n="reviews_title">
+      Client Reviews
+    </h2>
+
+    <p class="reviews__subtitle" data-i18n="reviews_subtitle">
+      What our clients say about us
+    </p>
+
+    <div class="reviews_wrapper_swiperbox">
+
+      <div class="swiperbox_card">
+        <ul class="review_stars">
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+        </ul>
+
+        <p class="review_text" data-i18n="review1_text">
+          "Amazing experience! The artist was professional, the studio was clean, and my tattoo turned out even better than I imagined."
+        </p>
+
+        <p class="review_author" data-i18n="review1_author">
+          — Michael Brown
+        </p>
+      </div>
+
+      <div class="swiperbox_card">
+        <ul class="review_stars">
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+        </ul>
+
+        <p class="review_text" data-i18n="review2_text">
+          "I got my first tattoo here and the team made me feel so comfortable. The design process was collaborative and the result is stunning!"
+        </p>
+
+        <p class="review_author" data-i18n="review2_author">
+          — Jessica Miller
+        </p>
+      </div>
+
+      <div class="swiperbox_card">
+        <ul class="review_stars">
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+          <li>
+      <svg class="review_star" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.48257 0.69075C6.78257 -0.23025 8.08557 -0.23025 8.38457 0.69075L9.45457 3.98275C9.51994 4.18324 9.64702 4.35793 9.81764 4.48185C9.98826 4.60578 10.1937 4.67259 10.4046 4.67275H13.8666C14.8356 4.67275 15.2376 5.91275 14.4546 6.48275L11.6546 8.51675C11.4836 8.64078 11.3563 8.81576 11.2909 9.0166C11.2255 9.21745 11.2254 9.43384 11.2906 9.63475L12.3606 12.9268C12.6606 13.8477 11.6056 14.6147 10.8206 14.0448L8.02057 12.0107C7.84977 11.8868 7.64413 11.82 7.43307 11.82C7.22201 11.82 7.01636 11.8868 6.84557 12.0107L4.04557 14.0448C3.26157 14.6147 2.20757 13.8477 2.50657 12.9268L3.57657 9.63475C3.64174 9.43384 3.64163 9.21745 3.57623 9.0166C3.51084 8.81576 3.38354 8.64078 3.21257 8.51675L0.413568 6.48375C-0.369432 5.91375 0.033568 4.67375 1.00157 4.67375H4.46257C4.67362 4.67381 4.87927 4.60709 5.05009 4.48315C5.22091 4.35921 5.34814 4.1844 5.41357 3.98375L6.48357 0.69175L6.48257 0.69075Z"/>
+      </svg>
+    </li>
+        </ul>
+
+        <p class="review_text" data-i18n="review3_text">
+          "Best tattoo studio in Berlin! Great atmosphere, talented artists, and reasonable prices. Highly recommend!"
+        </p>
+
+        <p class="review_author" data-i18n="review3_author">
+          — David Wilson
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section class="faq" id="faq">
+  <div class="faq_wrapper">
+
+    <h2 class="faq__title" data-i18n="faq_title">FAQ</h2>
+
+    <p class="faq__subtitle" data-i18n="faq_subtitle">
+      Frequently asked questions
+    </p>
+
+    <div class="faq_wrapper_cardbox">
+
+      <div class="faq_card">
+        <h3 class="faq_question" data-i18n="faq_q1">
+          Does it hurt?
+        </h3>
+        <p class="faq_answer" data-i18n="faq_a1">
+          Pain levels vary depending on placement and individual tolerance. 
+          Most clients describe it as manageable discomfort rather than severe pain.
+        </p>
+      </div>
+
+      <div class="faq_card">
+        <h3 class="faq_question" data-i18n="faq_q2">
+          How long does healing take?
+        </h3>
+        <p class="faq_answer" data-i18n="faq_a2">
+          Typically 2–4 weeks for surface healing. Complete healing can take 2–3 months. 
+          We provide detailed aftercare instructions.
+        </p>
+      </div>
+
+      <div class="faq_card">
+        <h3 class="faq_question" data-i18n="faq_q3">
+          Can I bring my own design?
+        </h3>
+        <p class="faq_answer" data-i18n="faq_a3">
+          Absolutely! We can work with your design or create something custom. 
+          Our artists will help refine it for the best tattoo result.
+        </p>
+      </div>
+
+      <div class="faq_card">
+        <h3 class="faq_question" data-i18n="faq_q4">
+          What is the minimum age?
+        </h3>
+        <p class="faq_answer" data-i18n="faq_a4">
+          You must be 18 years or older. Valid ID is required for all clients.
+        </p>
+      </div>
+
+      <div class="faq_card">
+        <h3 class="faq_question" data-i18n="faq_q5">
+          How do I prepare for my session?
+        </h3>
+        <p class="faq_answer" data-i18n="faq_a5">
+          Get a good night's sleep, eat a proper meal, stay hydrated, and avoid alcohol 24 hours before. 
+          Wear comfortable clothing.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact_wrapper">
+
+    <h2 class="contact__title" data-i18n="contact_title">Contact</h2>
+
+    <p class="contact__subtitle" data-i18n="contact_subtitle">
+      Get in touch for booking or consultation
+    </p>
+
+    <div class="contact_wrapper_content">
+
+      <!-- LEFT SIDE — CONTACT INFO -->
+      <div class="contact_info">
+        <div class="contact_info_list">
+
+          <div class="contact_info_item">
+            <div class="contact_info_icon">
+              <img src="./src/assets/icons/location.webp" loading="lazy" alt="location icon">
+            </div>
+            <div class="contact_info_text">
+              <h3 class="contact_info_title" data-i18n="contact_address_title">Address</h3>
+              <p class="contact_info_value" data-i18n="contact_address_value">
+                Berlin, Friedrichstraße 123
+              </p>
+            </div>
+          </div>
+
+          <div class="contact_info_item">
+            <div class="contact_info_icon">
+              <img src="./src/assets/icons/phone.webp" loading="lazy" alt="phone icon">
+            </div>
+            <div class="contact_info_text">
+              <h3 class="contact_info_title" data-i18n="contact_phone_title">Phone</h3>
+              <a class="contact_info_value" href="tel:+49301234567" data-i18n="contact_phone_value">
+                +49 30 1234567
+              </a>
+            </div>
+          </div>
+
+          <div class="contact_info_item">
+            <div class="contact_info_icon">
+              <img src="./src/assets/icons/message.webp" loading="lazy" alt="email icon">
+            </div>
+            <div class="contact_info_text">
+              <h3 class="contact_info_title" data-i18n="contact_email_title">Email</h3>
+              <p class="contact_info_value" data-i18n="contact_email_value">
+                info@inkstudio.de
+              </p>
+            </div>
+          </div>
+
+          <div class="contact_info_item">
+            <div class="contact_info_icon">
+              <img src="./src/assets/icons/clock.webp" loading="lazy" alt="opening hours icon">
+            </div>
+            <div class="contact_info_text">
+              <h3 class="contact_info_title" data-i18n="contact_hours_title">Opening Hours</h3>
+              <p class="contact_info_value" data-i18n="contact_hours_value">
+                Mon–Sun: 10:00 – 22:00
+              </p>
+            </div>
+          </div>
+
+          <div class="contact_socials">
+            <a href="#"><img src="./src/assets/icons/instagram.webp" loading="lazy" alt="instagram"></a>
+            <a href="#"><img src="./src/assets/icons/facebook.webp" loading="lazy" alt="facebook"></a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE — FORM -->
+      <div class="contact_form">
+
+        <h3 class="contact_form_title" data-i18n="contact_form_title">
+          Book a Session
+        </h3>
+
+        <input 
+          type="text" 
+          class="contact_input" 
+          placeholder="Your Name"
+          data-i18n-placeholder="contact_input_name"
+        >
+
+        <input 
+          type="text" 
+          class="contact_input" 
+          placeholder="Phone"
+          data-i18n-placeholder="contact_input_phone"
+        >
+
+        <input 
+          type="text" 
+          class="contact_input" 
+          placeholder="Email"
+          data-i18n-placeholder="contact_input_email"
+        >
+
+        <select class="contact_select">
+          <option value="" data-i18n="contact_select_service">
+            Select Service
+          </option>
+        </select>
+
+        <textarea 
+          class="contact_textarea" 
+          placeholder="Description of desired tattoo"
+          data-i18n-placeholder="contact_textarea_description"
+        ></textarea>
+
+        <button class="contact_button" data-i18n="contact_button">
+          Send Request
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer_wrapper" >
+    <p data-i18n="footer_rights">© 2026 INK STUDIO. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
