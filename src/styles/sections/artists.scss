@@ -1,0 +1,247 @@
+.artists {
+  background: #18181b;
+  padding: 80px 0;
+}
+
+.artists_wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TITLE */
+.artists__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 107%;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+/* SUBTITLE */
+.artists__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+  color: #99a1af;
+  margin-bottom: 64px;
+}
+
+/* CARD WRAPPER */
+.artist_wrapper_cardbox {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+/* CARD */
+.artist_card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 264px;
+  background: #000;
+}
+
+/* LETTER BLOCK */
+.artist_card_letter {
+  max-width: 264px;
+  background: linear-gradient(135deg, rgba(130, 24, 26, 0.484) 0%, #000 100%);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  color: rgba(251, 44, 54, 0.3);
+  padding: 102px 112px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* INFO BLOCK */
+.artist_card_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  padding: 24px 0 24px 24px;
+}
+
+/* NAME */
+.artist_card_name {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 149%;
+  color: #fff;
+}
+
+/* STYLE */
+.artist_card_style {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 157%;
+  color: #fb2c36;
+}
+
+/* EXPERIENCE */
+.artist_card_experience {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 147%;
+  color: #99a1af;
+}
+
+/* HOVER ANIMATION FOR ARTIST CARD */
+.artist_card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  }
+
+  /* Red line */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #fb2c36;
+    transition: width 0.35s ease;
+    transform: translateX(-50%);
+  }
+
+  &:hover::after {
+    width: 80%;
+  }
+}
+
+/* little zoom */
+.artist_card_letter {
+  transition: transform 0.35s ease, opacity 0.35s ease;
+
+  .artist_card:hover & {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 1025px) {
+
+  .artist_wrapper_cardbox {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .artist_card {
+    flex: 1 1 calc(50% - 28px);
+    max-width: 240px;
+  }
+
+  .artist_card_letter {
+    padding: 90px 100px;
+    font-size: 54px;
+  }
+
+  .artists__title {
+    font-size: 38px;
+  }
+
+  .artists__subtitle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 769px) {
+  .artists_wrapper {
+    padding: 0px 50px;
+  }
+
+  .artist_card {
+    width: 220px;
+  }
+
+  .artist_card_letter {
+    padding: 80px 90px;
+    font-size: 48px;
+  }
+
+  .artist_card_name {
+    font-size: 17px;
+  }
+
+  .artist_card_style {
+    font-size: 14px;
+  }
+
+  .artist_card_experience {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 426px) {
+  .artist_wrapper_cardbox {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .artist_card {
+    width: 260px;
+  }
+
+  .artist_card_letter {
+    padding: 70px 80px;
+    font-size: 42px;
+  }
+
+  .artists__title {
+    font-size: 32px;
+  }
+
+  .artists__subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 376px) {
+  .artists {
+    padding: 60px 0;
+  }
+
+  .artist_card {
+    width: 240px;
+  }
+
+  .artist_card_letter {
+    padding: 60px 70px;
+    font-size: 38px;
+  }
+
+  .artist_card_name {
+    font-size: 16px;
+  }
+
+  .artist_card_style {
+    font-size: 13px;
+  }
+
+  .artist_card_experience {
+    font-size: 11px;
+  }
+}

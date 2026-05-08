@@ -1,0 +1,274 @@
+.hero {
+  position: relative;
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url('../../assets/images/hero_tattoo_artist_working.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  height: 100vh; 
+}
+
+.hero_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+    height: 100%;
+}
+
+.hero_wrapper_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+
+ margin-top: 200px;
+}
+
+.hero_wrapper_title>h1 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 68px;
+  line-height: 105%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.hero_wrapper_title>p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 145%;
+  text-align: center;
+  color: #d1d5dc;
+
+  margin-bottom: 32px;
+}
+
+.hero_btn_box {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 240px;
+}
+
+.hero_booking_btn {
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+
+  border-radius: 33554400px;
+  border: none;
+  width: 188px;
+  height: 64px;
+
+  background: #e7000b;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 162%;
+  text-align: center;
+  color: #fff;
+
+  cursor: pointer;
+
+  text-decoration: none;
+}
+
+.hero_viewing_btn {
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+
+  border: 2px solid #fff;
+  border-radius: 33554400px;
+  width: 188px;
+  height: 64px;
+
+  background: transparent;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 163%;
+  text-align: center;
+  color: #fff;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* HOVER GLOW EFFECT FOR HERO BUTTONS */
+.hero_booking_btn,
+.hero_viewing_btn {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+/* Red glow for booking */
+.hero_booking_btn:hover {
+  box-shadow: 0 0 18px rgba(231, 0, 11, 0.55);
+  transform: translateY(-3px);
+}
+
+/* white glow for viewing */
+.hero_viewing_btn:hover {
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.45);
+  transform: translateY(-3px);
+}
+
+/* light glow */
+.hero_booking_btn::after,
+.hero_viewing_btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.hero_booking_btn::after {
+  box-shadow: inset 0 0 12px rgba(231, 0, 11, 0.45);
+}
+
+.hero_viewing_btn::after {
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.35);
+}
+
+.hero_booking_btn:hover::after,
+.hero_viewing_btn:hover::after {
+  opacity: 1;
+}
+
+.border_btn {
+  display: flex;
+  max-width: 24px;
+  margin: 0 auto;
+  justify-content: center;
+  border: none;
+  background: transparent;
+
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (min-width: 2200px) {
+  .border_btn {
+    bottom: 100px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .hero {
+    background-position: 50% 100%;
+  }
+
+
+  .hero_wrapper_title {
+    margin-top: 200px;
+  }
+
+  .hero_wrapper_title > h1 {
+    font-size: 54px;
+  }
+
+  .hero_wrapper_title > p {
+    font-size: 20px;
+  }
+
+  .hero_btn_box {
+    margin-bottom: 160px;
+  }
+
+  .hero_booking_btn,
+  .hero_viewing_btn {
+    width: 170px;
+    height: 58px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 769px) {
+  .hero {
+    background-size: auto;
+    
+  }
+
+  .hero_wrapper_title {
+    margin-top: 140px;
+    padding: 0 20px;
+  }
+
+  .hero_wrapper_title > h1 {
+    font-size: 42px;
+  }
+
+  .hero_wrapper_title > p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .hero_btn_box {
+    margin-bottom: 120px;
+    gap: 12px;
+  }
+
+  .hero_booking_btn,
+  .hero_viewing_btn {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .border_btn {
+    max-width: 20px;
+
+  }
+}
+
+@media (max-width: 426px) {
+  .hero {
+    background-size: auto;
+  }
+
+  .hero_wrapper_title {
+    margin-top: 110px;
+  }
+
+  .hero_wrapper_title > h1 {
+    font-size: 32px;
+  }
+
+  .hero_wrapper_title > p {
+    font-size: 16px;
+  }
+
+  .hero_btn_box {
+    margin-bottom: 80px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero_booking_btn,
+  .hero_viewing_btn {
+    width: 180px;
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .border_btn {
+    max-width: 18px;
+  }
+}

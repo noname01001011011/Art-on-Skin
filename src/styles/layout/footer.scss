@@ -1,0 +1,96 @@
+footer {
+  background: #18181b;
+}
+
+.footer_wrapper {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 37px 0px 36px 0px;
+}
+.footer_wrapper>p {  
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 159%;
+  text-align: center;
+  color: #99a1af;
+}
+
+
+
+
+/* BG_overlay */
+.modal_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+
+/* Modal Container */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  z-index: 101;
+}
+
+/* Inner Block */
+.modal_content {
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+
+  border-radius: 10px;
+}
+
+/* Close Btn */
+.modal_close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.modal_close:hover {
+  opacity: 1;
+}
+
+/* Modal Active */
+.modal.active,
+.modal_overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal.active .modal_content {
+  transform: translateY(0);
+}
+
+.contact_input.input-error,
+.contact_select.input-error,
+.contact_textarea.input-error {
+  border: 1px solid #fb2c36;
+}
+
+.contact_error-message {
+  font-size: 12px;
+  color: #fb2c36;
+  text-align: left;
+}

@@ -1,6 +1,6 @@
 import './style.scss';
 
-// 1) СНАЧАЛА словарь
+// 1)Vocabulary
 const translations = {
   en: {
     header_logo: "INK STUDIO",
@@ -124,6 +124,24 @@ const translations = {
     review3_text: "Best tattoo studio in Berlin! Great atmosphere, talented artists, and reasonable prices. Highly recommend!",
     review3_author: "— David Wilson",
 
+    review4_text: "Absolutely loved the atmosphere and professionalism. Will definitely return for my next piece!",
+    review4_author: "— Anna Becker",
+
+    review5_text: "The artist captured my idea perfectly. Clean lines, smooth shading — pure talent.",
+    review5_author: "— Lukas Hoffmann",
+
+    review6_text: "Super friendly staff and a very clean studio. I felt safe and comfortable the whole time.",
+    review6_author: "— Emily Schneider",
+
+    review7_text: "Amazing detail and precision. The artist truly brought my vision to life.",
+    review7_author: "— Daniel Weber",
+
+    review8_text: "Professional approach and great communication. Highly satisfied with the result!",
+    review8_author: "— Sofia Klein",
+
+    review9_text: "One of the best tattoo experiences I've ever had. Will definitely come back!",
+    review9_author: "— Markus Vogel",
+
     /* FAQ */
     faq_title: "FAQ",
     faq_subtitle: "Frequently asked questions",
@@ -162,8 +180,25 @@ const translations = {
     contact_input_phone: "Phone",
     contact_input_email: "Email",
     contact_select_service: "Select Service",
+    contact_consultation: "Consultation",
+    contact_design_creation: "Design Creation",
+    contact_tattooing: "Tattooing",
     contact_textarea_description: "Description of desired tattoo",
     contact_button: "Send Request",
+
+    // FORM ERRORS — EN
+    error_name_required: "Please enter your name.",
+    error_name_invalid: "Name contains invalid characters.",
+
+    error_phone_required: "Please enter your phone number.",
+    error_phone_invalid: "Phone must contain only digits (7–15).",
+
+    error_email_required: "Please enter your email.",
+    error_email_invalid: "Please enter a valid email.",
+
+    error_service_required: "Please select a service.",
+
+    error_message_required: "Please describe your idea.",
 
     /* FOOTER */
     footer_rights: "© 2026 INK STUDIO. All rights reserved."
@@ -289,6 +324,24 @@ const translations = {
     review3_text: "Bestes Tattoo-Studio in Berlin! Tolle Atmosphäre, talentierte Künstler und faire Preise. Sehr empfehlenswert!",
     review3_author: "— David Wilson",
 
+    review4_text: "Ich habe die Atmosphäre und Professionalität absolut geliebt. Ich komme definitiv für mein nächstes Tattoo zurück!",
+    review4_author: "— Anna Becker",
+
+    review5_text: "Der Künstler hat meine Idee perfekt umgesetzt. Saubere Linien, sanfte Schattierung — pure Kunst.",
+    review5_author: "— Lukas Hoffmann",
+
+    review6_text: "Super freundliches Team und ein sehr sauberes Studio. Ich habe mich die ganze Zeit sicher und wohl gefühlt.",
+    review6_author: "— Emily Schneider",
+
+    review7_text: "Unglaubliche Detailgenauigkeit und Präzision. Der Künstler hat meine Vision wirklich zum Leben erweckt.",
+    review7_author: "— Daniel Weber",
+
+    review8_text: "Professioneller Ansatz und großartige Kommunikation. Ich bin mit dem Ergebnis sehr zufrieden!",
+    review8_author: "— Sofia Klein",
+
+    review9_text: "Eine der besten Tattoo-Erfahrungen, die ich je hatte. Ich komme definitiv wieder!",
+    review9_author: "— Markus Vogel",
+
     /* FAQ */
     faq_title: "FAQ",
     faq_subtitle: "Häufig gestellte Fragen",
@@ -327,24 +380,47 @@ const translations = {
     contact_input_phone: "Telefon",
     contact_input_email: "E-Mail",
     contact_select_service: "Dienst auswählen",
+    contact_consultation:"Beratung",
+    contact_design_creation: "Designentwicklung",
+    contact_tattooing: "Tätowierung",
     contact_textarea_description: "Beschreibung des gewünschten Tattoos",
     contact_button: "Anfrage senden",
+
+    // FORM ERRORS — DE
+    error_name_required: "Bitte geben Sie Ihren Namen ein.",
+    error_name_invalid: "Der Name enthält ungültige Zeichen.",
+
+    error_phone_required: "Bitte geben Sie Ihre Telefonnummer ein.",
+    error_phone_invalid: "Die Telefonnummer darf nur Ziffern enthalten (7–15).",
+
+    error_email_required: "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+    error_email_invalid: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+
+    error_service_required: "Bitte wählen Sie eine Dienstleistung aus.",
+
+    error_message_required: "Bitte beschreiben Sie Ihre Idee.",
 
     /* FOOTER */
     footer_rights: "© 2026 INK STUDIO. Alle Rechte vorbehalten."
   }
 };
 
-// 2) Потом бургер
+// 2) Burger
 const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobile_menu');
+
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   mobileMenu.classList.toggle('active');
+  if (mobileMenu.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
+  }
 });
 
-// 3) Потом плавный скролл
+// 3) Smooth Scroll
 const header = document.querySelector('.header');
 const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -369,18 +445,19 @@ anchorLinks.forEach(link => {
 
     burger.classList.remove('active');
     mobileMenu.classList.remove('active');
+    document.body.style.overflow = 'auto';
   });
 });
 
-// 4) Потом логика перевода
-// 2) переключатель языка
+
+// 3) Translation
 const langToggle = document.getElementById('lang-toggle');
 const langToggleMobile = document.getElementById('lang-toggle-mobile');
 let currentLang = 'en';
 
-// 3) одна, единая функция перевода
+// *one, unified translation function
 function applyTranslations(lang) {
-  // обычные тексты
+  // *regular texts
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang][key]) {
@@ -388,7 +465,7 @@ function applyTranslations(lang) {
     }
   });
 
-  // placeholder'ы
+  // *placeholders
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const key = el.getAttribute('data-i18n-placeholder');
     if (translations[lang][key]) {
@@ -397,7 +474,7 @@ function applyTranslations(lang) {
   });
 }
 
-// 4) смена языка по тумблеру
+// *change language using the toggle switch
 langToggle.addEventListener('change', () => {
   currentLang = langToggle.checked ? 'de' : 'en';
   applyTranslations(currentLang);
@@ -408,44 +485,74 @@ langToggleMobile.addEventListener('change', ()=> {
   applyTranslations(currentLang);
 })
 
-// 5) начальная инициализация
+// 4) Gallery Filter
 applyTranslations(currentLang);
-
-//document.body.classList.toggle('no-scroll');
-//.no-scroll {
-    //overflow: hidden;
-  //} //
-  
-
 
 const filterButtons = document.querySelectorAll('.gallery_filter_btn');
 const galleryImages = document.querySelectorAll('.gallery_wrapper_img_box img');
+const galleryBox = document.querySelector('.gallery_wrapper_img_box');
 
 filterButtons.forEach(btn => {
   btn.addEventListener('click', () => {
-    // active button
+
     filterButtons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
 
     const filter = btn.getAttribute('data-filter');
 
+    let visibleImages = [];
+
+    // *smooth hiding
     galleryImages.forEach(img => {
       const category = img.getAttribute('data-category');
 
       if (filter === 'all' || category === filter) {
-        img.style.opacity = '1';
-        img.style.transform = 'scale(1)';
-        img.style.pointerEvents = 'auto';
-      } else {
-        img.style.opacity = '0';
-        img.style.transform = 'scale(0.8)';
-        img.style.pointerEvents = 'none';
+        visibleImages.push(img);
       }
+
+      img.classList.remove('gallery_img-visible');
+      img.classList.add('gallery_img-hidden');
+
+      // *display-hiding (only after the animation ends)
+      setTimeout(() => {
+        if (img.classList.contains('gallery_img-hidden')) {
+          img.style.display = 'none';
+        }
+      }, 350);
     });
+
+    // *dynamic grid
+    const count = visibleImages.length;
+
+    if (count === 1) {
+      galleryBox.style.gridTemplateColumns = '1fr';
+      galleryBox.style.justifyItems = 'center';
+    } else if (count === 2) {
+      galleryBox.style.gridTemplateColumns = 'repeat(2, 1fr)';
+      galleryBox.style.justifyItems = 'center';
+    } else {
+      galleryBox.style.gridTemplateColumns = 'repeat(3, 1fr)';
+      galleryBox.style.justifyItems = 'center';
+    }
+
+    // *smooth appearance (stagger)
+    visibleImages.forEach((img, index) => {
+      setTimeout(() => {
+        img.style.display = 'block';
+
+        // a small delay to allow CSS to apply display
+        requestAnimationFrame(() => {
+          img.classList.remove('gallery_img-hidden');
+          img.classList.add('gallery_img-visible');
+        });
+
+      }, index * 120);
+    });
+
   });
 });
 
-// COUNTER ANIMATION FOR ABOUT SECTION
+// *COUNTER ANIMATION FOR ABOUT SECTION
 const counters = document.querySelectorAll('.stats_block_value');
 let counterStarted = false;
 
@@ -476,10 +583,10 @@ const observer = new IntersectionObserver((entries) => {
         const rawValue = counter.textContent.replace('+', '').replace('%', '');
         const target = parseInt(rawValue);
 
-        // додаємо клас для fade-in
+        // *add a class for fade-in
         counter.classList.add('visible');
 
-        // позначаємо, чи був плюс
+        // *indicate here whether there was a plus
         if (counter.textContent.includes('+')) {
           counter.dataset.plus = true;
         }
@@ -491,3 +598,162 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 observer.observe(document.querySelector('#about'));
+
+// 5) Modal Window
+const modal = document.getElementById('modalBooking');
+const overlay = document.getElementById('modalOverlay');
+const openBtn = document.querySelector('.header_btn');
+const closeBtn = document.getElementById('modalClose');
+
+function openModal() {
+  modal.classList.add('active');
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+openBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});
+
+const reviewsSwiper = new Swiper('.reviews_swiper', {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  loop: true,
+  navigation: {
+    nextEl: '.reviews_next',
+    prevEl: '.reviews_prev',
+  },
+  breakpoints: {
+    1025: { slidesPerView: 3 },
+    769: { slidesPerView: 2 },
+    0: { slidesPerView: 1 }
+  }
+});
+
+// 6) Validation
+document.addEventListener('DOMContentLoaded', () => {
+  const forms = document.querySelectorAll('.contact_form');
+
+  forms.forEach(form => {
+    const nameInput   = form.querySelector('.contact_input_name');
+    const phoneInput  = form.querySelector('.contact_input_phone');
+    const emailInput  = form.querySelector('.contact_input_email');
+    const select      = form.querySelector('.contact_select');
+    const textarea    = form.querySelector('.contact_textarea');
+    const button      = form.querySelector('.contact_button');
+
+    const showError = (input, message) => {
+  clearError(input);
+
+  input.classList.add('input-error');
+
+  const error = document.createElement('div');
+  error.className = 'contact_error-message';
+  error.textContent = message;
+
+  // *INSERTING INSIDE THE WRAPPER
+  input.parentElement.appendChild(error);
+};
+
+    const clearError = (input) => {
+  input.classList.remove('input-error');
+  const wrapper = input.parentElement;
+  const error = wrapper.querySelector('.contact_error-message');
+  if (error) error.remove();
+};
+
+    const clearAllErrors = () => {
+      const inputs = [nameInput, phoneInput, emailInput, select, textarea];
+      inputs.forEach(el => {
+        if (!el) return;
+        clearError(el);
+      });
+    };
+
+    const validateName = (value) => {
+      // *only letters (Latin/Cyrillic), space, hyphen, apostrophe, minimum 2 characters
+      const re = /^[A-Za-zА-Яа-яЁёІіЇїЄє' -]{2,}$/;
+      return re.test(value.trim());
+    };
+
+    const validatePhone = (value) => {
+      // numbers only, minimum 7 characters
+      const re = /^\d{7,15}$/;
+      return re.test(value.trim());
+    };
+
+    const validateEmail = (value) => {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(value.trim());
+    };
+
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      clearAllErrors();
+
+      let isValid = true;
+
+      const nameValue  = nameInput.value;
+      const phoneValue = phoneInput.value;
+      const emailValue = emailInput.value;
+      const serviceVal = select.value;
+      const textValue  = textarea.value.trim();
+
+// Name
+if (!nameValue.trim()) {
+  showError(nameInput, translations[currentLang].error_name_required);
+  isValid = false;
+} else if (!validateName(nameValue)) {
+  showError(nameInput, translations[currentLang].error_name_invalid);
+  isValid = false;
+}
+
+// Phone
+if (!phoneValue.trim()) {
+  showError(phoneInput, translations[currentLang].error_phone_required);
+  isValid = false;
+} else if (!validatePhone(phoneValue)) {
+  showError(phoneInput, translations[currentLang].error_phone_invalid);
+  isValid = false;
+}
+
+// Email
+if (!emailValue.trim()) {
+  showError(emailInput, translations[currentLang].error_email_required);
+  isValid = false;
+} else if (!validateEmail(emailValue)) {
+  showError(emailInput, translations[currentLang].error_email_invalid);
+  isValid = false;
+}
+
+// Select
+if (!serviceVal) {
+  showError(select, translations[currentLang].error_service_required);
+  isValid = false;
+}
+
+// Textarea
+if (!textValue) {
+  showError(textarea, translations[currentLang].error_message_required);
+  isValid = false;
+}
+
+      if (!isValid) return;
+
+      // *submit the form here (fetch / AJAX / submit)
+      console.log('Form is valid, send data...');
+      // example:
+      // form.submit();
+    });
+  });
+});

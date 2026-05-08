@@ -1,0 +1,168 @@
+.faq {
+  background: #18181b;
+  padding: 80px 0;
+}
+
+.faq_wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TITLE */
+.faq__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+/* SUBTITLE */
+.faq__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 168%;
+  color: #99a1af;
+  margin-bottom: 64px;
+}
+
+/* CARD WRAPPER */
+.faq_wrapper_cardbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* CARD */
+.faq_card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 896px;
+  background: #000;
+
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 16px;
+  padding: 25px 45px 29px 25px;
+}
+
+/* QUESTION */
+.faq_question {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 149%;
+  color: #fb2c36;
+}
+
+/* ANSWER */
+.faq_answer {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 161%;
+  color: #d1d5dc;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 1025px) {
+  .faq_card {
+    width: 760px;
+    padding: 22px 36px 26px 22px;
+  }
+
+  .faq__title {
+    font-size: 42px;
+  }
+
+  .faq__subtitle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 769px) {
+  .faq_card {
+    width: 600px;
+    padding: 20px 28px 24px 20px;
+  }
+
+  .faq_question {
+    font-size: 17px;
+  }
+
+  .faq_answer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 426px) {
+  .faq_card {
+    width: 100%;
+    max-width: 360px;
+    padding: 18px 22px 22px 18px;
+  }
+
+  .faq__title {
+    font-size: 32px;
+  }
+
+  .faq__subtitle {
+    font-size: 14px;
+  }
+
+  .faq_question {
+    font-size: 16px;
+  }
+
+  .faq_answer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 376px) {
+  .faq {
+    padding: 60px 0;
+  }
+
+  .faq_card {
+    max-width: 320px;
+    padding: 16px 20px 20px 16px;
+  }
+
+  .faq_question {
+    font-size: 15px;
+  }
+
+  .faq_answer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 321px) {
+  .faq {
+    padding: 60px 0;
+  }
+
+  .faq_card {
+    max-width: 250px;
+    padding: 16px 20px 20px 16px;
+  }
+
+  .faq_question {
+    font-size: 15px;
+  }
+
+  .faq_answer {
+    font-size: 12px;
+  }
+}
